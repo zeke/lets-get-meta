@@ -15,8 +15,8 @@ npm install lets-get-meta --save
 ```js
 var getMeta = require("lets-get-meta")
 
-// Pass and HTML string
-getMeta("<meta name='page' content='index'><meta name='description' content='This is the index page'>")
+// Pass an HTML string that includes name and/or property metatags
+getMeta("<meta name='page' content='index'><meta property='description' content='This is the index page'>")
 
 // Get back an object
 {
