@@ -12,10 +12,11 @@ fs.readdirSync(__dirname + "/fixtures").forEach(function(file) {
 
 describe("lets-get-meta", function() {
 
-  it("extracts name and content from meta tags in an HTML string and returns a key-value object", function() {
+  it("extracts name or property and its content from meta tags in an HTML string and returns a key-value object", function() {
     assert.deepEqual(m(fixtures.simple), {
       foo: "yes",
-      bar: "no"
+      bar: "no",
+      'og:title': 'page title'
     })
   })
 
