@@ -1,6 +1,6 @@
 {
   "name": "lets-get-meta",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "Extract meta tags from an HTML string in Node.js (not browsers)",
   "main": "index.js",
   "scripts": {
